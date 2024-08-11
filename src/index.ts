@@ -1,0 +1,1 @@
+export { hypertranslate } from "./hypertranslate";

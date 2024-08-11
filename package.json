@@ -1,9 +1,11 @@
 {
   "name": "hypertranslate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "node --import tsx --test src/**.test.ts"
+    "test": "node --import tsx --test src/**.test.ts",
+    "build": "tsc"
   },
   "type": "module",
   "keywords": [],
@@ -17,5 +19,13 @@
   },
   "dependencies": {
     "@iamtraction/google-translate": "^2.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaTrechau/hypertranslate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnaTrechau/hypertranslate/issues"
+  },
+  "homepage": "https://github.com/AnaTrechau/hypertranslate#readme"
 }

@@ -1,0 +1,21 @@
+{
+  "name": "hypertranslate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --import tsx --test src/**.test.ts"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Just a silly library for hypertranslating stuff",
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@iamtraction/google-translate": "^2.0.1"
+  }
+}

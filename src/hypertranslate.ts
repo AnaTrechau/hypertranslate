@@ -1,8 +1,13 @@
 import translate from "@iamtraction/google-translate";
 import { LANGUAGES_ENUM } from "./enums/languages";
 
-export async function hypertranslate(text: string, times: number, finalLanguage = null): Promise<string> {
-  let translatedText = { text, from: { language: { iso: "pt" } } };
+export async function hypertranslate(
+  text: string,
+  times: number,
+  startingLanguage = "en",
+  finalLanguage = null
+): Promise<string> {
+  let translatedText = { text, from: { language: { iso: startingLanguage } } };
   const languageArray = new Array(times).fill(undefined).map(() => getRandomLanguage());
 
   if (finalLanguage) {
